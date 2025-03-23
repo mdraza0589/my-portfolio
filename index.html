@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Raza | Portfolio</title>
+    <link rel="icon" href="photo1.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="photo2.jpg" alt="Profile Photo">
+        <h2 id="myname">Mohammad Raza</h2>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#service">Software</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            <div class="social-icons nav-icons">
+                <a href="https://www.instagram.com/i_am_raza_41/?hl=en"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mohammad-raza-493623237/"><i class="fab fa-linkedin"></i></a>
+                <a href="tel:+916268053340"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+
+    <!-- Header/Introduction -->
+    <aside>
+        <div class="intro">
+            <h3>Frontend Developer</h3>
+            <h2>I'm <strong>Mohammad Raza</strong></h2>
+        </div>
+        <div class="my-image-box"></div>
+    </aside>
+
+    <!-- About Section -->
+    <div class="about-col-1 about-col-2" id="about">
+        <h1 class="sub-title about-title">About Me</h1>
+        <p class="para-about">
+            <span>Intern at Unified Mentor || Frontend Developer || React.js</span><br><br>
+            Hi, I'm Mohammad Raza, a B.Tech student at IES College of Technology (2021-2025) with a strong passion for coding and web development.<br><br>
+            I am an intern at Unified Mentor, where I completed minor and major projects as a Frontend Developer.<br><br>
+            My programming journey began in my first year with C, the foundation of modern coding. Since then, I’ve gained proficiency in HTML, CSS, JavaScript, and React.js through a comprehensive frontend development course. I’ve also completed C++ and Data Structures & Algorithms (DSA) in C to enhance my skills.<br><br>
+            Currently, I’m working on exciting projects to apply my knowledge and grow as a developer.<br><br>
+            A proud moment in my academic career was being awarded the title of "Extraordinary Student" at my college in 2022 for my dedication and achievements.<br><br>
+            I’m always eager to connect with like-minded professionals and explore new opportunities in the tech world.
+        </p>
+
+        <!-- Tabbed Skills Section -->
+        <div class="skills-container">
+            <div class="tab-title">
+                <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                <p class="tab-links" onclick="opentab(event, 'exprience')">Experience</p>
+                <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                <p class="tab-links" onclick="opentab(event, 'archivement')">Achievements</p>
+            </div>
+            <div class="tab-content active-tab" id="skills">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>DSA</li>
+                    <li>MS Office</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="exprience">
+                <ul>
+                    <li><span>2025 Internship</span><br>Frontend Developer Intern at Unified Mentor</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="education">
+                <ul>
+                    <li><span>2021 - 2025</span><br>B.Tech, IES College of Technology, Bhopal</li>
+                    <li><span>2019 - 2020</span><br>12<sup>th</sup>, Chhattisgarh</li>
+                    <li><span>2017 - 2018</span><br>10<sup>th</sup>, Chhattisgarh</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="archivement">
+                <ul>
+                    <li><span>2023 Technovation</span><br>1st Place Winner at Technovation 2023, IES College of Technology</li>
+                    <li><span>2022 Extraordinary Student</span><br>Awarded "Extraordinary Student" title at IES College of Technology</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Software Section -->
+    <div id="service">
+        <h1 class="sub-title software-title">Software</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-brands fa-uncharted" style="color: #fffefa; font-size: 1.5rem;"></i>
+                <h2>VS Code</h2>
+                <p>Visual Studio Code is a lightweight, powerful editor by Microsoft, ideal for frontend development with HTML, CSS, JavaScript, and React.js.</p>
+            </div>
+            <div>
+                <i class="fa-regular fa-file-excel" style="color: #f6f7f9; font-size: 1.5rem;"></i>
+                <h2>MS Office</h2>
+                <p>Microsoft Office is a productivity suite including Word, Excel, and PowerPoint, used for documentation, data analysis, and presentations with OneDrive integration.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-github" style="color: #fffefa; font-size: 1.5rem;"></i>
+                <h2>GitHub</h2>
+                <p>GitHub is a platform for version control and collaboration, allowing developers to store, manage, and share code using Git.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-diagram-project" style="color: #fffefa; font-size: 1.5rem;"></i>
+                <h2>AI Tools</h2>
+                <p>AI boosts productivity. I use tools like ChatGPT (OpenAI), Grok AI (xAI), and Gamma.AI for coding and problem-solving.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title contact-title">Contact Me</h1>
+                    <p class="mail"><i class="fa-regular fa-envelope"></i> razamohammad0589@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> +91 6268053340</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/i_am_raza_41/?hl=en"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/mohammad-raza-493623237/"><i class="fab fa-linkedin"></i></a>
+                        <a href="tel:+916268053340"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <a class="btn btn2" onclick="clickBtn()">Download Resume</a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025 Mohammad Raza Portfolio</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
