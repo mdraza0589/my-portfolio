@@ -29,8 +29,7 @@ function opentab(event, tabname) {
 function clickBtn() {
     let comfirmed = confirm('do you want to open resume');
     if (comfirmed) {
-        // window.location = ""
-        alert('sorry it is not awailable now')
+        window.location = "raza-resume.pdf"
     }
     else {
         return
